@@ -19,6 +19,7 @@
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             android:background="@drawable/jodhpur"
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarLayoutExpandedTextStyle"
             app:elevation="4dp"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 

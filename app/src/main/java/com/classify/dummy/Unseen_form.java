@@ -15,6 +15,7 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -44,6 +45,7 @@ public class Unseen_form extends AppCompatActivity {
     private FirebaseAuth mAuth;
     protected FirebaseAuth.AuthStateListener mAuthListener;
     DatabaseReference mDatabaseUnseenBeauty;
+    DatabaseReference mDatabaseUnseentotal;
     Button mapBtn;
     EditText placename,desc;
     ImageView img;
@@ -85,6 +87,31 @@ public class Unseen_form extends AppCompatActivity {
                     email = firebaseAuth.getCurrentUser().getEmail();
 
 
+                    mDatabaseUnseentotal.addValueEventListener(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot) {
+                            for(DataSnapshot snapshot : dataSnapshot.getChildren())
+                            {
+                                total_unseen = (String) snapshot.child("no").getValue();
+                                total_unseen_int = Integer.parseInt(total_unseen);
+                                Log.d("asda",total_unseen);
+                            }
+                        /*if(flag==0)
+                        {
+                            total_unseen_int++;
+                            mDatabaseUnseenBeauty.child(total_unseen_int+"").child("imageurl").setValue("hey");
+                            mDatabaseUnseenBeauty.child(total_unseen_int+"").child("place").setValue(unseen_place);
+                            mDatabaseUnseenBeauty.child(total_unseen_int+"").child("desc").setValue(description);
+                            mDatabaseUnseenBeauty.child("totalUnseen").setValue(total_unseen_int+"");
+                            flag=1;
+                        }*/
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError) {
+
+                        }
+                    });
                     //  Picasso.with(MainActivity.this).load(firebaseAuth.getCurrentUser().getPhotoUrl()).resize(50, 50).centerCrop().into(userpic);
                     // user.setText(username);
                 }
@@ -93,6 +120,8 @@ public class Unseen_form extends AppCompatActivity {
 
         mDatabaseUnseenBeauty = FirebaseDatabase.getInstance().getReference().child("Unseen");
         mDatabaseUnseenBeauty.keepSynced(true);
+        mDatabaseUnseentotal = FirebaseDatabase.getInstance().getReference().child("totals");
+        mDatabaseUnseentotal.keepSynced(true);
 
         placename = (EditText)findViewById(R.id.edittext1);
         desc = (EditText)findViewById(R.id.edittext2);
@@ -104,6 +133,16 @@ public class Unseen_form extends AppCompatActivity {
             public void onClick(View view) {
                 final String unseen_place = placename.getText().toString();
                 final String description = desc.getText().toString();
+
+                total_unseen_int++;
+                mDatabaseUnseenBeauty.child(total_unseen_int+"").child("imageurl").setValue("hey");
+                mDatabaseUnseenBeauty.child(total_unseen_int+"").child("place").setValue(unseen_place);
+                mDatabaseUnseenBeauty.child(total_unseen_int+"").child("desc").setValue(description);
+                mDatabaseUnseentotal.child("1").child("no").setValue(total_unseen_int+"");
+                desc.setText("");
+                placename.setText("");
+
+/*
 
                 Query query = mDatabaseUnseenBeauty.orderByChild("email").equalTo(email);
                 query.addValueEventListener(new ValueEventListener() {
@@ -135,6 +174,7 @@ public class Unseen_form extends AppCompatActivity {
                 });
 
 
+*/
 
             }
         });

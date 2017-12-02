@@ -19,7 +19,7 @@
                 android:layout_height="250dp"
                 android:id="@+id/image_detail"
                 android:elevation="10dp"
-                android:background="@drawable/jodhpur"/>
+                android:background="@drawable/noimage"/>
 
             <TextView
                 android:layout_width="match_parent"

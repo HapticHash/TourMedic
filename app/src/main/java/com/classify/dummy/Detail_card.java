@@ -16,7 +16,11 @@ public class Detail_card extends AppCompatActivity {
     TextView longdesc;
     TextView rating;
     RatingBar ratingBar;
-    String url,placename,sDesc,lDesc,ratings;
+    String url="";
+    String placename = "";
+    String sDesc = "";
+    String lDesc = "";
+    String ratings = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +42,5 @@ public class Detail_card extends AppCompatActivity {
         place.setText(placename);
         longdesc.setText(lDesc);
         rating.setText(ratings);
-
     }
 }

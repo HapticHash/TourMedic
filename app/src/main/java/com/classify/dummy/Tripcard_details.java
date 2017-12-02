@@ -138,20 +138,20 @@ public class Tripcard_details extends AppCompatActivity {
 
             holder.tripname.setText(al2.get(position).getDestination());
             holder.date.setText(dates);
-           /* holder.tripcard.setOnClickListener(new View.OnClickListener() {
+            holder.tripcard.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     getData(al2.get(position).getDestination());
                     Intent i =new Intent(Tripcard_details.this,For_you_tab.class);
                     i.putExtra("placename",al2.get(position).getDestination());
                     startActivity(i);
-*//*
+/*
                     For_you_tab tab1  = new For_you_tab(al2.get(position).getDestination());
-                    tab1.getInfo1();*//*
+                    tab1.getInfo1();*/
 
                 }
             });
-*/
+
         }
 
 
