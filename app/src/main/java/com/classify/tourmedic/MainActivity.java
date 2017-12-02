@@ -26,10 +26,10 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-/*
+
 import in.galaxyofandroid.spinerdialog.OnSpinerItemClick;
 import in.galaxyofandroid.spinerdialog.SpinnerDialog;
-*/
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<search> al1 = new ArrayList<>();
     //ArrayList<fragment_Class> al2 = new ArrayList<>();
     private RecyclerView recyclerView;
-    //SpinnerDialog spinnerDialog;
+    SpinnerDialog spinnerDialog;
     DatabaseReference mDatabaseSearchList;
     DatabaseReference mDatabaseCreateTrip;
     FirebaseUser user;
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         setUpRecyclerView(recyclerView);
 */
 
-/*
+
         searchbar = (EditText)findViewById(R.id.searchbar);
         searchbar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 spinnerDialog.showSpinerDialog();
             }
         });
-*/
+
 
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
@@ -102,15 +102,15 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         //spinnerDialog.showSpinerDialog();
                     }
-                   /* spinnerDialog = new SpinnerDialog(MainActivity.this, al, "Search city");
+                    spinnerDialog = new SpinnerDialog(MainActivity.this, al, "Search city");
                     spinnerDialog.bindOnSpinerListener(new OnSpinerItemClick() {
                         @Override
                         public void onClick(String item, int position) {
-                            Intent i = new Intent(MainActivity.this, City.class);
+                           /* Intent i = new Intent(MainActivity.this, City.class);
                             i.putExtra("place", item);
-                            startActivity(i);
+                            startActivity(i);*/
                         }
-                    });*/
+                    });
                 }
             }
         };
