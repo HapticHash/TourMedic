@@ -4,22 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.classify.tourmedic.Day_plan">
+    tools:context="com.classify.dummy.Day_plan">
 
 
-    <TextView
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="address"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:hint="Your Plan name"
         android:id="@+id/dayplantext"
         />
 
-    <fragment
-        android:layout_width="368dp"
-        android:layout_height="495dp"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_below="@+id/dayplantext"
-        android:name="com.google.android.gms.maps.MapFragment"
-        android:id="@+id/mapFragment" />
+        android:padding="10dp">
+        <fragment
+            android:layout_width="368dp"
+            android:layout_height="495dp"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:id="@+id/mapFragment" />
+    </RelativeLayout>
+
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fabs1"
@@ -27,6 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
 

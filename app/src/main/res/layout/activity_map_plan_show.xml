@@ -4,13 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.classify.tourmedic.Map_plan_show">
+    android:padding="10dp"
+    tools:context="com.classify.dummy.Map_plan_show">
 
 
     <fragment
-        android:layout_width="368dp"
-        android:layout_height="495dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:name="com.google.android.gms.maps.MapFragment"
         android:id="@+id/mapFragment_save" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/re">
+
+        </android.support.v7.widget.RecyclerView>
+
 
 </RelativeLayout>

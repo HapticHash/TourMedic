@@ -15,14 +15,14 @@
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="7dp"
         android:layout_height="130dp"
-        android:id="@+id/cardviewI">
+        android:id="@+id/mapcards">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/icl"
+                android:id="@+id/map_img"
                 android:layout_margin="10dp"
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
@@ -34,24 +34,24 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/text1"
+                android:id="@+id/text10"
                 android:text="Hawa Mahal"
                 android:textSize="20sp"
                 android:fontFamily="sans-serif-medium"
-                android:layout_toRightOf="@+id/icl"
+                android:layout_toRightOf="@+id/map_img"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="20dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/text2"
+                android:id="@+id/text20"
                 android:text="Open till 4:00 PM"
                 android:textStyle="bold"
                 android:textSize="15sp"
                 android:fontFamily="sans-serif-medium"
-                android:layout_below="@+id/text1"
+                android:layout_below="@+id/text10"
                 android:textColor="#FF058114"
-                android:layout_toRightOf="@+id/icl"
+                android:layout_toRightOf="@+id/map_img"
                 android:layout_marginStart="5dp"
                 android:layout_marginTop="10dp"/>
             <TextView
@@ -62,18 +62,18 @@
                 android:textColor="#000000"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:layout_toRightOf="@+id/icl"
-                android:layout_below="@+id/text2"
-                android:id="@+id/text3"/>
+                android:layout_toRightOf="@+id/map_img"
+                android:layout_below="@+id/text20"
+                android:id="@+id/text30"/>
 
             <RatingBar
-                android:id="@+id/ratingBar"
+                android:id="@+id/ratingBar0"
                 style="@style/Widget.AppCompat.RatingBar.Small"
                 android:layout_width="80dp"
                 android:layout_marginTop="7dp"
                 android:layout_height="20dp"
-                android:layout_toRightOf="@+id/text3"
-                android:layout_below="@+id/text2"
+                android:layout_toRightOf="@+id/text30"
+                android:layout_below="@+id/text20"
                 android:rating="4.0"/>
 
 

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mayank.myapplication.MainActivity">
+
+        <ImageView
+            android:id="@+id/imgv"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="5dp"
+            android:tooltipText="Add a photo"
+            android:src="@drawable/upload"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/imgv"
+            android:text="Udaipur"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/text1"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="20dp"
+            android:layout_below="@+id/text1"
+            android:hint="Write name of the place"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:id="@+id/edittext1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Description:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:id="@+id/text3"
+            android:layout_below="@id/edittext1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/rl1"
+            android:layout_below="@+id/text3">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edittext2"
+                android:hint="Optional"
+                android:ems="10"
+                android:textSize="15sp"
+                android:inputType="textMultiLine" />
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/rl1"
+            android:layout_centerInParent="true"
+            android:background="@drawable/border"
+            android:backgroundTint="#0084ff"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:text="SAVE"
+            android:id="@+id/save_unseen"/>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitXY"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            android:layout_marginBottom="7dp"
+            android:src="@drawable/jodhpur"
+            android:id="@+id/imgv"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_below="@+id/imgv"
+            android:text="Udaipur"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/text1"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginEnd="20dp"
+
+            android:layout_below="@+id/text1"
+            android:hint="Write name of the place"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/edittext1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Description:"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:id="@+id/text3"
+            android:layout_below="@id/edittext1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/border"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/rl1"
+            android:layout_below="@+id/text3">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:id="@+id/edittext2"
+                android:backgroundTint="#ffffff"
+                android:inputType="textMultiLine"
+                android:hint="Optional"
+                android:maxLines="10"
+                />
+
+        </RelativeLayout>
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:id="@+id/save_unseen"
+            android:layout_below="@+id/rl1"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/border"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="#ffffff"
+            android:text="SAVE" />
+
+
+    </RelativeLayout>
+    -->

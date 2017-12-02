@@ -13,7 +13,8 @@
             android:layout_height="match_parent"
             android:paddingBottom="15dp"
             android:hint="Where do you want to go?"
-            android:id="@+id/searchbar"/>
+            android:id="@+id/searchbar"
+            android:editable="false"/>
         <!--<ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"

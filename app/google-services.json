@@ -103,94 +103,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "768340878364-tsgaq5j69pnf00irssa3ru8qh4knvou2.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.classify.dummy",
-            "certificate_hash": "85ee75cc87844e3098b911c4a3a2377af39170db"
-          }
-        },
-        {
           "client_id": "768340878364-k0tvdg6vbqa7viethc4o24bivlg1iv6g.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.classify.dummy",
             "certificate_hash": "0ce9c584bcb7f0299b451801bffd589c96024706"
-          }
-        },
-        {
-          "client_id": "768340878364-ogd2sjor83gjm8m9m286d94o4ss3bso4.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDDxV41UzTrHRkSHl5D63EXQsWc7nsbISY"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "768340878364-ogd2sjor83gjm8m9m286d94o4ss3bso4.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:768340878364:android:7c84ddc55c4d26c5",
-        "android_client_info": {
-          "package_name": "hackathon.harshit.tourmedic"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "768340878364-ogd2sjor83gjm8m9m286d94o4ss3bso4.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyDDxV41UzTrHRkSHl5D63EXQsWc7nsbISY"
-        }
-      ],
-      "services": {
-        "analytics_service": {
-          "status": 1
-        },
-        "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:768340878364:android:c62ddaaa8085c825",
-        "android_client_info": {
-          "package_name": "com.classify.tourmedic"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "768340878364-3t4i6ch3g58jkg5vprvh9bhlg8gp6k5a.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.classify.tourmedic",
-            "certificate_hash": "85ee75cc87844e3098b911c4a3a2377af39170db"
           }
         },
         {
