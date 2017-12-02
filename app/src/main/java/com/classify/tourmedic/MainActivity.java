@@ -26,10 +26,10 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
-/*
 import in.galaxyofandroid.spinerdialog.OnSpinerItemClick;
 import in.galaxyofandroid.spinerdialog.SpinnerDialog;
-*/
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,9 +39,9 @@ public class MainActivity extends AppCompatActivity {
 
     ArrayList<String> al = new ArrayList<>();
     ArrayList<search> al1 = new ArrayList<>();
-    //ArrayList<fragment_Class> al2 = new ArrayList<>();
+    ArrayList<fragment_Class> al2 = new ArrayList<>();
     private RecyclerView recyclerView;
-    //SpinnerDialog spinnerDialog;
+    SpinnerDialog spinnerDialog;
     DatabaseReference mDatabaseSearchList;
     DatabaseReference mDatabaseCreateTrip;
     FirebaseUser user;
@@ -65,12 +65,12 @@ public class MainActivity extends AppCompatActivity {
         mDatabaseCreateTrip = FirebaseDatabase.getInstance().getReference().child("CreateTrip");
         mDatabaseCreateTrip.keepSynced(true);
 
-/*
+
         recyclerView = (RecyclerView) findViewById(R.id.recyclerView_mainscreen);
         setUpRecyclerView(recyclerView);
-*/
 
-/*
+
+
         searchbar = (EditText)findViewById(R.id.searchbar);
         searchbar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                 spinnerDialog.showSpinerDialog();
             }
         });
-*/
+
 
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         //spinnerDialog.showSpinerDialog();
                     }
-                   /* spinnerDialog = new SpinnerDialog(MainActivity.this, al, "Search city");
+                    spinnerDialog = new SpinnerDialog(MainActivity.this, al, "Search city");
                     spinnerDialog.bindOnSpinerListener(new OnSpinerItemClick() {
                         @Override
                         public void onClick(String item, int position) {
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
                             i.putExtra("place", item);
                             startActivity(i);
                         }
-                    });*/
+                    });
                 }
             }
         };
@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    /*public void getData() {
+    public void getData() {
         Log.d("hii","hii2");
         al2.clear();
         mDatabaseCreateTrip.child(no).child("Trips").addValueEventListener(new ValueEventListener() {
@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-*/
+
     private void initItems() {
 
         mDatabaseSearchList.addValueEventListener(new ValueEventListener() {
@@ -211,13 +211,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-   /* private void setUpRecyclerView(RecyclerView rv) {
+    private void setUpRecyclerView(RecyclerView rv) {
         rv.setLayoutManager(new LinearLayoutManager(rv.getContext()));
         rv.setAdapter(new adapter(rv.getContext(), al2));
         Log.d("Firebase-data", "user adapter");
     }
-*/
-   /* private class adapter extends RecyclerView.Adapter<MainActivity.adapter.ViewHolder> {
+
+    private class adapter extends RecyclerView.Adapter<MainActivity.adapter.ViewHolder> {
         ArrayList<fragment_Class> al2 = new ArrayList<>();
         Context context;
 
@@ -274,5 +274,5 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-*/
+
 }

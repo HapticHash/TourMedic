@@ -186,6 +186,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "768340878364-3t4i6ch3g58jkg5vprvh9bhlg8gp6k5a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.classify.tourmedic",
+            "certificate_hash": "85ee75cc87844e3098b911c4a3a2377af39170db"
+          }
+        },
+        {
           "client_id": "768340878364-ogd2sjor83gjm8m9m286d94o4ss3bso4.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -200,8 +208,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768340878364-ogd2sjor83gjm8m9m286d94o4ss3bso4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2
