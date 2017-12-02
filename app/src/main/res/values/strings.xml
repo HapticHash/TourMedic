@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">TourMedic</string>
+    <string name="app_name">Tourmedic</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="placeapi_key">AIzaSyAao09yQTImCyo4A5Rs-_-r0xIEPcuXrcY</string>
+    <string name="mapapi_key">AIzaSyCWV1agUnGpAkMo8dKaEkPJ4fGZmXAr18c</string>
+    <string name="placeapi_key1">AIzaSyDGHHsoKJQ6-0A-JAaXqgls0N7lHX6dVAY</string>
+    <string name="mapapi_key1">AIzaSyDGHHsoKJQ6-0A-JAaXqgls0N7lHX6dVAY</string>
+
 </resources>
