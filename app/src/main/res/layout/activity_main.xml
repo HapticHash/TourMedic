@@ -22,7 +22,6 @@
             android:layout_marginTop="12dp"
             android:src="@drawable/ic_search_grey_600_24dp"/>-->
     </RelativeLayout>
-<!--
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -39,7 +38,6 @@
                 android:padding="4dp"/>
         </LinearLayout>
     </ScrollView>
--->
 
 
 </LinearLayout>
