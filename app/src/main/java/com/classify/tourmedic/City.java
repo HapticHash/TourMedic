@@ -40,7 +40,7 @@ public class City extends AppCompatActivity {
         things.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(City.this,MainActivity.class);
+                Intent i = new Intent(City.this,Main2Activity.class);
                 i.putExtra("cityname",placename);
                 startActivity(i);
             }
